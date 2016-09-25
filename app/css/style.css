@@ -1,0 +1,52 @@
+@import "./search.css";
+@import "./friendlist.css";
+
+@font-face {
+  font-family: Firasans;
+  src: url('./FiraSans-Medium.ttf');
+}
+
+body {
+  background: rgba(129, 129, 129, .4);
+  font-family: Firasans, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-block {
+  width: 100%;
+}
+
+.title {
+  background-image: url('./img/sprite.png');
+  background-position: 0 0;
+  margin: 90px auto 0;
+  height: 24px;
+  width: 100px;
+}
+
+.modal {
+  margin: 20px auto 0;
+  width: 620px;
+}
+
+.modal-header {
+  border: 1px solid transparent;
+  border-radius: 10px 10px 0 0;
+  background-color: #ff8663;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.cross--close {
+  background-image: url(./img/sprite.png);
+  background-position: -3px 15px;
+  float: right;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

@@ -1,0 +1,21 @@
+.friend-list {
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 355px;
+  padding: 15px;
+}
+
+.friend-list--left {
+  border-right: 1px solid #f0f0f0;
+  float: left;
+  width: 50%;
+}
+
+.friend-list--right {
+  float: right;
+  width: 50%;
+}
+
+.friend-list__title {
+  font-size: 12px;
+}

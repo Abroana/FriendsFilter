@@ -1,0 +1,34 @@
+.search-container {
+  background-color: #f0f0f0;
+  padding: 10px 15px 40px 15px;
+  position: relative;
+}
+
+.modal-input {
+  border: 1px solid transparent;
+  border-radius: 13px;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 7px 14px;
+  margin: 0;
+  width: 285px;
+}
+
+.modal-input--right {
+  float: right;
+}
+
+.modal-input--left {
+  float: left;
+  padding-left: 27px;
+}
+
+.search-container__icon {
+  background-image: url(./img/sprite.png);
+  background-position: 74px 15px;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  top: 17px;
+  left: 22px;
+}
