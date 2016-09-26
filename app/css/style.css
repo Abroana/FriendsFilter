@@ -1,5 +1,6 @@
 @import "./search.css";
 @import "./friendlist.css";
+@import "./modal_header.css";
 
 @font-face {
   font-family: Firasans;
@@ -28,25 +29,4 @@ body {
 .modal {
   margin: 20px auto 0;
   width: 620px;
-}
-
-.modal-header {
-  border: 1px solid transparent;
-  border-radius: 10px 10px 0 0;
-  background-color: #ff8663;
-  color: #fff;
-  font-size: 16px;
-  padding: 10px 15px;
-  position: relative;
-}
-
-.cross--close {
-  background-image: url(./img/sprite.png);
-  background-position: -3px 15px;
-  float: right;
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
 }
