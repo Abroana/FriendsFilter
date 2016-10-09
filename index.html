@@ -34,12 +34,21 @@
         </div>
       </div>
     </div>
-    <script id="friend-template" type="text/x-handlebars-template">
+    <script id="friend-right" type="text/x-handlebars-template">
       {{#each this}}
         <li class="friend-list-item" data-id="{{uid}}" data-i="{{index}}">
           <img alt="" class="friend-list-item__photo" src="{{photo_100}}">
           <span class="friend-list-item__name">{{first_name}} {{last_name}}</span>
           <div class="friend-list-item__icon friend-list-item__icon--remove"></div>
+        </li>
+      {{/each}}
+    </script>
+    <script id="friend-left" type="text/x-handlebars-template">
+      {{#each this}}
+        <li class="friend-list-item" data-id="{{uid}}" data-i="{{index}}">
+          <img alt="" class="friend-list-item__photo" src="{{photo_100}}">
+          <span class="friend-list-item__name">{{first_name}} {{last_name}}</span>
+          <div class="friend-list-item__icon friend-list-item__icon--add"></div>
         </li>
       {{/each}}
     </script>

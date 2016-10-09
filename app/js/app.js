@@ -11,7 +11,7 @@
     }
   }).then(function() {
     getFriends().then(function(friends) {
-      let source   = document.getElementById('friend-template').innerHTML;
+      let source   = document.getElementById('friend-left').innerHTML;
       let template = Handlebars.compile(source);
       let html = template(friends);
       left.innerHTML = html;
