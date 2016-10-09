@@ -16,6 +16,7 @@
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-postcss": "^6.2.0",
+    "handlebars": "^4.0.5",
     "postcss-import": "^8.1.2"
   }
 }
