@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently --kill-others \"gulp\" \"lite-server\""
+    "start": "concurrently --kill-others \"lite-server\" \"gulp\""
   },
   "author": "Anastasia Abrosimova",
   "license": "ISC",

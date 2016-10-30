@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
-    cssnano = require('cssnano'),
     cssimport = require('postcss-import'),
     browserify = require('gulp-browserify');
 
@@ -23,11 +22,6 @@ gulp.task('css', function() {
     .pipe(postcss(processors))
     .pipe(gulp.dest('dist/css'));
 });
-
-/*gulp.task('html', function() {
-  gulp.src('app/index.html')
-    .pipe(gulp.dest('dest'));
-});*/
 
 gulp.watch('app/**', ['js' , 'css']);
 

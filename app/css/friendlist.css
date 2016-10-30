@@ -30,6 +30,13 @@
   padding: 0 8px 0 0;
 }
 
+[draggable] {
+  user-select: none;
+
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
 .friend-list-item {
   border-bottom: 1px solid #f0f0f0;
   list-style: none;

@@ -36,21 +36,35 @@
     </div>
     <script id="friend-right" type="text/x-handlebars-template">
       {{#each this}}
-        <li class="friend-list-item" data-id="{{uid}}" data-i="{{index}}">
+        <li class="friend-list-item" draggable="true" data-id="{{uid}}" data-i="{{index}}">
           <img alt="" class="friend-list-item__photo" src="{{photo_100}}">
           <span class="friend-list-item__name">{{first_name}} {{last_name}}</span>
-          <div class="friend-list-item__icon friend-list-item__icon--remove"></div>
+          <div class="friend-list-item__icon friend-list-item__icon--remove" data-id="{{uid}}"></div>
         </li>
       {{/each}}
     </script>
     <script id="friend-left" type="text/x-handlebars-template">
       {{#each this}}
-        <li class="friend-list-item" data-id="{{uid}}" data-i="{{index}}">
+        <li class="friend-list-item" draggable="true" data-id="{{uid}}" data-i="{{index}}">
           <img alt="" class="friend-list-item__photo" src="{{photo_100}}">
           <span class="friend-list-item__name">{{first_name}} {{last_name}}</span>
-          <div class="friend-list-item__icon friend-list-item__icon--add"></div>
+          <div class="friend-list-item__icon friend-list-item__icon--add" data-id="{{uid}}"></div>
         </li>
       {{/each}}
+    </script>
+    <script id="friend-favorite" type="text/x-handlebars-template">
+      <li class="friend-list-item" draggable="true" data-id="{{uid}}" data-i="{{index}}">
+        <img alt="" class="friend-list-item__photo" src="{{photo_100}}">
+        <span class="friend-list-item__name">{{first_name}} {{last_name}}</span>
+        <div class="friend-list-item__icon friend-list-item__icon--remove" data-id="{{uid}}"></div>
+      </li>
+    </script>
+    <script id="friend" type="text/x-handlebars-template">
+      <li class="friend-list-item" draggable="true" data-id="{{uid}}" data-i="{{index}}">
+        <img alt="" class="friend-list-item__photo" src="{{photo_100}}">
+        <span class="friend-list-item__name">{{first_name}} {{last_name}}</span>
+        <div class="friend-list-item__icon friend-list-item__icon--add" data-id="{{uid}}"></div>
+      </li>
     </script>
     <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
     <script src="./dist/js/app.js" charset="utf-8"></script>
